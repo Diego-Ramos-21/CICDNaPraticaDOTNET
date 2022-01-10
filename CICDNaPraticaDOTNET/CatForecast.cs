@@ -1,6 +1,6 @@
 namespace CICDNaPraticaDOTNET;
 
-public class WeatherForecast
+public class CatForecast
 {
     public DateTime Date { get; set; }
 
