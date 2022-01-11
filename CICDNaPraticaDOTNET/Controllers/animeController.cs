@@ -5,11 +5,11 @@ namespace CICDNaPraticaDOTNET.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class catController : ControllerBase
+    public class animeController : ControllerBase
     {
-        public static string BaseURL = "https://raw.githubusercontent.com/Fox-Tan/CICDNaPraticaDOTNET/main/Images/Cat/";
-        private readonly ILogger<catController> _logger;
-        public catController(ILogger<catController> logger, IConfiguration configuration) => _logger = logger;
+        public static string BaseURL = "https://raw.githubusercontent.com/Fox-Tan/CICDNaPraticaDOTNET/main/Images/Anime/";
+        private readonly ILogger<animeController> _logger;
+        public animeController(ILogger<animeController> logger, IConfiguration configuration) => _logger = logger;
         [HttpGet]
         public IActionResult Get(bool image)
         {
